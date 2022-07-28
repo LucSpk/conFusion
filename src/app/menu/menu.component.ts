@@ -54,7 +54,7 @@ export class MenuComponent implements OnInit {
 
   dishes = DISHES;
 
-  selectDish: Dish = DISHES[0];
+  selectedDish = DISHES[0];
 
   constructor() { }
 
