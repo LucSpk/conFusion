@@ -51,7 +51,7 @@ const DISH = {
 })
 export class DishdetailComponent implements OnInit {
 
-  dishes = DISH;
+  dish = DISH;
 
   constructor() { }
 
