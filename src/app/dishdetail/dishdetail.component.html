@@ -16,8 +16,7 @@
       </mat-card-header>
       <img mat-card-image src={{dish.image}} alt={{dish.name}}>
       <mat-card-content>
-        <p>{{dish.description}}
-        </p>
+        <p>{{dish.description}}</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-button>LIKE</button>
@@ -33,7 +32,6 @@
       </mat-list-item>
     </mat-list>
 
-      
     <mat-list *ngFor="let dishComment of dish.comments">
       <mat-list-item > 
         <p matLine>{{dishComment.comment}}</p> 
