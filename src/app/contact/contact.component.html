@@ -64,16 +64,7 @@
         </mat-form-field>
         
       </p>
-      <p>
-        <mat-form-field class="half-width">
-          <input matInput formControlName="telnum" placeholder="Tel. Number" type="tel" required>
-          <mat-error *ngIf="feedbackForm.get('telnum').hasError('required') && feedbackForm.get('telnum').touched">Tel. number is required</mat-error>
-        </mat-form-field>
-        <mat-form-field class="half-width">
-          <input matInput formControlName="email" placeholder="Email" type="email" required>
-          <mat-error *ngIf="feedbackForm.get('email').hasError('required') && feedbackForm.get('email').touched">Email ID is required</mat-error>
-        </mat-form-field>
-      </p>
+     
       <table class="form-size">
         <td>
           <mat-slide-toggle formControlName="agree">May we contact you?</mat-slide-toggle>
