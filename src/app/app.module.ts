@@ -41,6 +41,10 @@ import { LoginComponent } from './login/login.component';
 
 import { MatSliderModule } from '@angular/material';
 
+import { HttpClientModule } from '@angular/common/http';
+
+import { baseURL } from './shared/baseurl';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,12 +77,14 @@ import { MatSliderModule } from '@angular/material';
     ReactiveFormsModule,
     MatProgressSpinnerModule,
     MatSliderModule,
+    HttpClientModule,
 
   ],
   providers: [
     DishService,
     PromotionService,
-     LeaderService
+    LeaderService,
+    {provide: 'BaseURL', useValue: baseURL}
   ],
   entryComponents: [
     LoginComponent
